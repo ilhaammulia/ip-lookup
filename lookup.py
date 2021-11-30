@@ -19,7 +19,7 @@ Message: {message}
     """
     return data
 
-class IP:
+class IPLookup:
     def __init__(self, ip):
         self.url = "http://ip-api.com/json/"
         self.address = str(ip)
@@ -44,7 +44,7 @@ class IP:
             print("Error:", str(e))
             
             
-session = IP("114.124.1925.7")
+session = IPLookup("114.124.1925.7")
 print(session.lookup())
                 
             
